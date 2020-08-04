@@ -16,7 +16,7 @@ class FooTest {
 
     @Test
     void importData() {
-        final Server server = new Server(URI.create("localhost:9999"), new User("sven", "test1234"));
+        final Server server = new Server(URI.create("localhost:9999"), new User("sven", "test1234".getBytes()));
         final ImportConfig config = new ImportConfig(
                 new Table("src"),
                 new Table("dst"),
