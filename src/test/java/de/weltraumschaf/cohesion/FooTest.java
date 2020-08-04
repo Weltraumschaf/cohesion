@@ -11,6 +11,7 @@ import static org.hamcrest.Matchers.*;
  */
 class FooTest {
 
+
     @Test
     void foo() {
         assertThat(false, is(true));
