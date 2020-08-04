@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>de.weltraumschaf.organization</groupId>
+        <artifactId>organization-parent</artifactId>
+        <version>3.0.0-SNAPSHOT</version>
+    </parent>
+
+    <groupId>de.weltraumschaf</groupId>
+    <artifactId>cohesion</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>cohesion</name>
+
+    <developers>
+        <developer>
+            <id>Weltraumschaf</id>
+            <name>Sven Strittmatter</name>
+            <email>ich@weltraumschaf.de</email>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>THE BEER-WARE LICENSE</name>
+            <url>http://www.weltraumschaf.de/the-beer-ware-license.txt</url>
+            <distribution>repo</distribution>
+            <comments>
+                LICENSE
+
+                "THE BEER-WARE LICENSE" (Revision 42):
+                "Sven Strittmatter" &lt;weltraumschaf(at)googlemail(dot)com&gt;
+                wrote this file.
+                As long as you retain this notice you can do whatever you want
+                with
+                this stuff. If we meet some day, and you think this stuff is
+                worth it,
+                you can buy me a beer in return.
+            </comments>
+        </license>
+    </licenses>
+
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/Weltraumschaf/cohesion/issues</url>
+    </issueManagement>
+
+    <scm>
+        <connection>scm:git:git://github.com/Weltraumschaf/cohesion.git
+        </connection>
+        <developerConnection>scm:git:git@github.com:Weltraumschaf/cohesion.git
+        </developerConnection>
+        <url>https://github.com/Weltraumschaf/cohesion.git</url>
+        <tag>HEAD</tag>
+    </scm>
+
+    <distributionManagement>
+        <site>
+            <id>github-project-site</id>
+            <url>gitsite:git@github.com/Weltraumschaf/cohesion.git</url>
+        </site>
+    </distributionManagement>
+
+    <properties>
+        <project.build.version.source>1.8</project.build.version.source>
+        <project.build.version.target>1.8</project.build.version.target>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-migrationsupport</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-launcher</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-params</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.vintage</groupId>
+            <artifactId>junit-vintage-engine</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-junit</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-junit-jupiter</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>nl.jqno.equalsverifier</groupId>
+            <artifactId>equalsverifier</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>
