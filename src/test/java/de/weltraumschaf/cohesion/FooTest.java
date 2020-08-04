@@ -1,5 +1,7 @@
 package de.weltraumschaf.cohesion;
 
+import de.weltraumschaf.cohesion.datadefiniton.Column;
+import de.weltraumschaf.cohesion.datadefiniton.Columns;
 import de.weltraumschaf.cohesion.datadefiniton.Table;
 import org.junit.jupiter.api.Test;
 
@@ -22,7 +24,10 @@ class FooTest {
                 Table.from("src"),
                 Table.from("dst"),
                 new Range(10, 20),
-                Collections.EMPTY_LIST);
+                Columns.empty()
+                    .add(Column.from("foo"))
+                    .add(Column.from("bar"))
+                    .add(Column.from("baz")));
 
         final Importer sut = new Importer(server);
 
