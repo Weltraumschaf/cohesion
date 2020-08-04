@@ -1,5 +1,6 @@
 package de.weltraumschaf.cohesion;
 
+import de.weltraumschaf.cohesion.datadefiniton.Table;
 import org.junit.jupiter.api.Test;
 
 import java.net.URI;
@@ -18,8 +19,8 @@ class FooTest {
     void importData() {
         final Server server = new Server(URI.create("localhost:9999"), new User("sven", "test1234".getBytes()));
         final ImportConfig config = new ImportConfig(
-                new Table("src"),
-                new Table("dst"),
+                Table.from("src"),
+                Table.from("dst"),
                 new Range(10, 20),
                 Collections.EMPTY_LIST);
 
